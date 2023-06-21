@@ -112,7 +112,7 @@ Run SNMP queries, process returned values, find Cisco PluggableOptics sensors
                 m = re.search(r"slot\s+([\d\/]+)\s+transceiver.*\s+(\d+)\s+.*(temperature|current|voltage|power)", physDescr, re.IGNORECASE)
                 if m:
                     physSlot = m.group(1) + '/' + m.group(2)
-                if re.search(ifDescr + _sensor_regex, physDescr, re.IGNORECASE) or intfSlot == physSlot:
+                if re.search(r'^' + ifDescr + _sensor_regex, physDescr, re.IGNORECASE) or intfSlot == physSlot:
                     # give a friendlier name if the interface name did not match
                     if intfSlot == physSlot:
                         physDescr = re.sub(r'.*slot\s+([\d\/]+)\s+transceiver.*\s+(\d+)',ifDescr,physDescr)
