@@ -3,8 +3,8 @@
 # or saved.  Do not modify them directly here.
 # NB: PACKAGES is deprecated
 NAME = "ZenPacks.community.CiscoPluggableOptics"
-VERSION = "1.1.0"
-AUTHOR = "Russell Dwarshuis"
+VERSION = "1.1.1"
+AUTHOR = "Merit Network, Inc."
 LICENSE = "GPLv2+"
 NAMESPACE_PACKAGES = ['ZenPacks', 'ZenPacks.community']
 PACKAGES = ['ZenPacks', 'ZenPacks.community', 'ZenPacks.community.CiscoPluggableOptics']
